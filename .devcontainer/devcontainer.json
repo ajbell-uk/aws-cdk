@@ -9,10 +9,8 @@
       "extensions": ["dbaeumer.vscode-eslint"]
     }
   },
-  "mounts": [
-    "type=bind,source=${localEnv:HOME}/.ssh,target=/home/superchain/.ssh,readonly"
-  ],
-  // "postCreateCommand": "yarn install",
+
+  "postCreateCommand": "yarn install",
   "remoteUser": "superchain",
   "features": {
     "docker-in-docker": {
